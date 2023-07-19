@@ -100,7 +100,8 @@ h1 {
 /* Experiencia */
 
 .experiencia {
-  padding: 40px 40px 60px 40px;
+  padding: 40px 40px 100px 40px;
+  
 }
 
 .experiencia .columna {
@@ -111,6 +112,8 @@ h1 {
   align-items: center;
   justify-content: space-evenly;
   transition: all 0.2s ease-in;
+  margin-left: calc(18 * var(--bs-gutter-x));
+ 
 }
 
 .experiencia .columna:hover {
@@ -122,8 +125,10 @@ h1 {
   font-size: 2.5rem;
   color: #7ade30;
   background-color: #0a0a23;
-  padding: 8px 19px;
+  padding: 8px -5x;
   border-radius: 50%;
+  margin-left: -10px;
+  width: 103.33%;
 }
 
 .experiencia-titulo {
@@ -135,7 +140,7 @@ h1 {
 .badges-contenedor {
   font-size: 20px;
   font-weight: bold;
-  margin: 10px 0;
+  margin: -10px 0;
 }
 
 .badge {
@@ -154,7 +159,8 @@ h1 {
   padding: 10px;
   border-radius: 10px;
   display: block;
-  transition: all 0.2s ease;
+  transition: all 0.2s;
+  margin-left: 450px;
 }
 
 .proyectos-contenedor {
@@ -170,12 +176,14 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  margin-left: 450px;
 }
 
 .overlay p {
   font-size: 25px;
   font-weight: bold;
-  margin-bottom: 0;
+  margin-bottom: -10px;
+  margin-left: -10px;
 }
 
 .proyecto {
@@ -200,60 +208,6 @@ h1 {
   margin: 10px;
 }
 
-
-/* Testimonios */
-
-.testimonios {
-  padding: 40px 40px 80px 40px;
-}
-
-.testimonios .carousel {
-  max-width: 800px;
-}
-
-.carousel-item {
-  height: 500px;
-}
-
-.carousel-item .container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.testimonio-imagen {
-  height: 150px;
-  width: 150px;
-  margin: 10px 10px 20px 10px;
-}
-
-.testimonio-texto {
-  max-width: 70%;
-  font-size: 20px;
-  text-align: center;
-  font-family: 'Share Tech Mono', monospace;
-}
-
-.testimonio-info {
-  font-weight: bold;
-  text-align: center;
-}
-
-.testimonio-info p {
-  margin-bottom: 0;
-}
-
-.testimonio-footer .cliente {
-  font-size: 1.2rem;
-}
-
-.testimonio-info .cargo {
-  font-size: 0.9rem;
-  color: #656060;
-}
 
 /* Contacto */
 
@@ -378,16 +332,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 800px) {
-  .testimonio-imagen {
-    height: 120px;
-    width: 120px;
-  }
 
-  .testimonio-texto {
-    font-size: 18px;
-  }
-}
 
 @media screen and (min-width: 700px) {
   .hero-inferior-imagen {
